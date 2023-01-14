@@ -1,0 +1,20 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: auto;
+  width: 90vw;
+  height: 90vh;
+}
+
+.h1 {
+  font-size: 3rem;
+  padding-left: 1rem;
+  border-left: 4px red solid;
+}
+
+.h2 {
+  padding-right: 1rem;
+  font-size: 2rem;
+}
