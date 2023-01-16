@@ -8,11 +8,17 @@ export default function Button(props) {
         {props.children}
       </Link>
     );
+  } else if (props.Link) {
+    return (
+      <Link className={styles.btn} href={props.Link}>
+        {props.children}
+      </Link>
+    );
+  } else {
+    return (
+      <button className={styles.btn} onClick={props.onClick}>
+        {props.children}
+      </button>
+    );
   }
-
-  return (
-    <button className={styles.btn} onClick={props.onClick}>
-      {props.children}
-    </button>
-  );
 }

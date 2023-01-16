@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
+import { Fragment } from "react";
 
 import { getFilteredEvents } from "../dummy-data";
 import EventList from "../../components/events/event-list";
 import ResultsTitle from "../../components/events/results-title";
-import { Fragment } from "react";
 import Button from "../../components/events/ui/button";
 import ErrorAlert from "../../components/events/ui/error-alert";
 

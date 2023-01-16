@@ -1,17 +1,21 @@
 .footer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem 10%;
-  /* height: 5rem; */
   background-color: #202020;
   color: #94fdfd;
-  /* margin-bottom: -550px; */
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contact {
-  /* width: 500px; */
   display: flex;
 }
 
@@ -31,7 +35,27 @@
   color: #94fdfd;
 }
 
+.copyright {
+  display: flex;
+}
+
 .logo a {
   text-decoration: none;
   color: #94fdfd;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: auto;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .contact,
+  .logo,
+  .copyright {
+    margin: 0.5rem 0;
+    width: 90%;
+    justify-content: flex-start;
+  }
 }
